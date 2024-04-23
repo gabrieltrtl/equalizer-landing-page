@@ -45,6 +45,8 @@ body {
   }
 }
 
+// Header
+
 .header {
   padding: 40px 0 64px 24px;
   @include device(tablet) {
@@ -55,26 +57,35 @@ body {
   }
 }
 
+// First Section (Intro)
+
 .container__intro {
   padding: 0 24px;
   margin-bottom: 68px;
   color: $base-color1;
   @include device(tablet) {
     max-width: 585px;
-    padding-left: 40px;
+    padding-left: 39px;
+    margin-bottom: 110px;
   }
   @include device(desktop) {
     padding-left: 165px;
+    max-width: 1040px;
   }
 }
 
 .intro__title {
-  font-size: map-get($fonts,"$large1");
+  font-size: map-get($fonts, "$large1");
   line-height: 1.2;
   margin-bottom: 20px;
   @include device(tablet) {
     font-size: map-get($fonts, "$large2");
     line-height: 1;
+    margin-bottom: 28px;
+  }
+  @include device(desktop) {
+    font-size: map-get($fonts, "$large3");
+    margin-bottom: 40px;
   }
 }
 
@@ -84,8 +95,57 @@ body {
     font-size: map-get($fonts, "$small");
     line-height: 1.5;
   }
+  @include device(desktop) {
+    font-size: map-get($fonts, "$medium1");
+  }
 }
 
+// Second Section (Offer)
+
+.container__offer {
+  background-color: $base-color1;
+  position: relative;
+  background-image: url(./assets/bg-pattern-2.svg);
+}
+
+.offer__img {
+  max-width: 208px;
+  position: absolute;
+  left: 80px;
+}
+
+.offer__content {
+  background-color: $color4;
+}
+
+.offer__title {
+  font-size: map-get($fonts, "$medium2");
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.offer__text {
+  font-size: map-get($fonts, "$small");
+  margin-bottom: 36px;
+}
+
+.offer__price {
+  font-size: map-get($fonts, "$large2");
+  line-height: 0.8;
+  margin-bottom: 32px;
+  .offer__time {
+  font-size: map-get($fonts, "$small");
+  line-height: 1.6;
+  }
+}
+
+.offer__ios {
+
+}
+
+.offer__android {
+    
+}
 
 
 
