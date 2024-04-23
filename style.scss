@@ -1,3 +1,6 @@
+// Imports
+@import 'utilities';
+
 // MY CSS RESET
 * {
   margin: 0;
@@ -18,3 +21,71 @@ img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Project Start
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-image: url(./assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right -190px bottom 100px;
+  @include device(tablet) {
+    background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-tablet.png);
+    background-position: right -40px top -40px, left -370px top -300px;
+    background-size:  266px auto, auto;
+  }
+  @include device(desktop) {
+    background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-desktop.png);
+    background-position: right 0px top -50px, left -370px top -300px;
+  }
+}
+
+.header {
+  padding: 40px 0 64px 24px;
+  @include device(tablet) {
+    padding: 62px 0 95px 39px;
+  }
+  @include device(desktop) {
+    padding: 62px 0px 127px 165px;
+  }
+}
+
+.container__intro {
+  padding: 0 24px;
+  margin-bottom: 68px;
+  color: $base-color1;
+  @include device(tablet) {
+    max-width: 585px;
+    padding-left: 40px;
+  }
+  @include device(desktop) {
+    padding-left: 165px;
+  }
+}
+
+.intro__title {
+  font-size: map-get($fonts,"$large1");
+  line-height: 1.2;
+  margin-bottom: 20px;
+  @include device(tablet) {
+    font-size: map-get($fonts, "$large2");
+    line-height: 1;
+  }
+}
+
+.intro__text {
+  line-height: 1.625;
+  @include device(tablet) {
+    font-size: map-get($fonts, "$small");
+    line-height: 1.5;
+  }
+}
+
+
+
+

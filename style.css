@@ -1,0 +1,129 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: bold;
+  border-radius: 12px;
+  max-width: 20.8125rem;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.btn-darkblue {
+  color: #FCFAF9;
+  background-color: #191826;
+}
+.btn-darkblue:hover {
+  color: #FCFAF9;
+  background-color: #66E2DC;
+}
+
+.btn-white {
+  color: #191826;
+  background-color: #FCFAF9;
+}
+.btn-white:hover {
+  color: #191826;
+  background-color: #FFB964;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-image: url(./assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right -190px bottom 100px;
+}
+@media (min-width: 700px) {
+  body {
+    background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-tablet.png);
+    background-position: right -40px top -40px, left -370px top -300px;
+    background-size: 266px auto, auto;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-desktop.png);
+    background-position: right 0px top -50px, left -370px top -300px;
+  }
+}
+
+.header {
+  padding: 40px 0 64px 24px;
+}
+@media (min-width: 700px) {
+  .header {
+    padding: 62px 0 95px 39px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 62px 0px 127px 165px;
+  }
+}
+
+.container__intro {
+  padding: 0 24px;
+  margin-bottom: 68px;
+  color: #191826;
+}
+@media (min-width: 700px) {
+  .container__intro {
+    max-width: 585px;
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .container__intro {
+    padding-left: 165px;
+  }
+}
+
+.intro__title {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+@media (min-width: 700px) {
+  .intro__title {
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+
+.intro__text {
+  line-height: 1.625;
+}
+@media (min-width: 700px) {
+  .intro__text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+// Media Query
+@mixin device($device) {
+  @if $device == tablet {
+    @media (min-width: 700px) {
+      @content;
+    }
+  }  
+  @else if $device == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+// Colors
+$base-color1: #191826;
+$base-color2: #FCFAF9;
+$color3: #66E2DC;
+$color4: #FA7453;
+$color5: #FFB964;
+
+// Typography
+
+$fonts: (
+  "$xsmall": 16px,
+  "$small": 18px,
+  "$medium1": 20px,
+  "$medium2": 32px,
+  "$large1": 40px,
+  "$large2": 64px,
+  "$large3": 88px
+);
+
+// Buttons
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: bold;
+  border-radius: 12px;
+  max-width: 20.8125rem;
+  // height: 3.8125rem;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.btn-darkblue {
+  color: $base-color2;
+  background-color: $base-color1;
+  &:hover {
+    color: $base-color2;
+    background-color: $color3;
+  }
+}
+
+.btn-white {
+  color: $base-color1;
+  background-color: $base-color2;
+  &:hover {
+    color: $base-color1;
+    background-color: $color5;
+  }
+}
+
+
