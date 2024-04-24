@@ -22,13 +22,13 @@ $color5: #FFB964;
 // Typography
 
 $fonts: (
-  "$xsmall": 16px,
-  "$small": 18px,
-  "$medium1": 20px,
-  "$medium2": 32px,
-  "$large1": 40px,
-  "$large2": 64px,
-  "$large3": 88px
+  "$xsmall": 1rem,
+  "$small": 1.125rem,
+  "$medium1": 1.25rem,
+  "$medium2": 2rem,
+  "$large1": 2.5rem,
+  "$large2": 4rem,
+  "$large3": 5.5rem
 );
 
 // Buttons
@@ -38,7 +38,7 @@ $fonts: (
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.7;
   font-weight: bold;
   border-radius: 12px;
