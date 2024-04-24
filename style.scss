@@ -145,10 +145,11 @@ body {
   background-color: $base-color1;
   background-image: url(./assets/bg-pattern-2.svg);
   background-repeat: no-repeat;
-  background-position: top -40px left 215px;
+  background-position: center;
   grid-column: 1 / -1;
   grid-row: 2 / 4;
   @include device(tablet) {
+    background-position: top -40px left 215px;
     border-radius: 12px;
     grid-row: 2 / 5;
   }
