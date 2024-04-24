@@ -185,6 +185,7 @@ body {
   background-color: #191826;
   background-image: url(./assets/bg-pattern-2.svg);
   background-repeat: no-repeat;
+  background-position: top -40px left 215px;
   grid-column: 1/-1;
   grid-row: 2/4;
 }
@@ -192,6 +193,11 @@ body {
   .offer__bg {
     border-radius: 12px;
     grid-row: 2/5;
+  }
+}
+@media (min-width: 1200px) {
+  .offer__bg {
+    background-position: top -50px left 352px;
   }
 }
 
