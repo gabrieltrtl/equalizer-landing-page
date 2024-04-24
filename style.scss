@@ -50,14 +50,26 @@ body {
 .header {
   padding: 40px 0 64px 24px;
   @include device(tablet) {
-    padding: 62px 0 95px 39px;
+    max-width: 696px;
+    margin: 0 auto;
+    padding: 62px 0 95px 0px;
   }
   @include device(desktop) {
-    padding: 62px 0px 127px 165px;
+    max-width: 1110px;
+    padding: 62px 0px 127px 0px;
   }
 }
 
 // First Section (Intro)
+.container {
+  @include device(tablet) {
+    max-width: 696px;
+    margin: 0 auto;
+  } 
+  @include device(desktop) {
+    max-width: 1110px;
+  }
+}
 
 .container__intro {
   padding: 0 24px;
@@ -65,11 +77,10 @@ body {
   color: $base-color1;
   @include device(tablet) {
     max-width: 585px;
-    padding-left: 39px;
+    padding: initial;
     margin-bottom: 110px;
   }
   @include device(desktop) {
-    padding-left: 165px;
     max-width: 1040px;
   }
 }
@@ -94,9 +105,11 @@ body {
   @include device(tablet) {
     font-size: map-get($fonts, "$small");
     line-height: 1.5;
+    max-width: 514px;
   }
   @include device(desktop) {
     font-size: map-get($fonts, "$medium1");
+    max-width: 825px;
   }
 }
 
@@ -117,7 +130,7 @@ body {
     // grid-template-rows: 137.6px 148.8px 432px 96px;
     grid-template-rows: 138px 150px 268px 182px 96px;
     max-width: 696px;
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-bottom: 87px;
   }
   @include device(desktop) {
@@ -221,10 +234,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0px 24px 80px 24px;
+  max-width: 696px;
+  margin: 0 auto;
   @include device(tablet) {
-    
+    padding: initial;
   }
   @include device(desktop) {
+    max-width: 1110px;
     flex-direction: row;
     align-items: flex-start;
     gap: 137px
